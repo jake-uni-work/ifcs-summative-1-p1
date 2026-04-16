@@ -14,6 +14,9 @@ class LeapYearTests(unittest.TestCase):
         
     def test_100(self):
         self.assertEqual(is_leap_year(1800), False)
+        
+    def test_400(self):
+        self.assertEqual(is_leap_year(2000), True)
     
 if __name__ == "__main__":
     unittest.main()
